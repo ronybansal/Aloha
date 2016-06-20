@@ -1,0 +1,641 @@
+/* Helper Classes */
+@font-face {
+    font-family: 'playfair display';
+    src: url('assets/fonts/playfairdisplay-bold-webfont.eot');
+    src: url('assets/fonts/playfairdisplay-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/playfairdisplay-bold-webfont.woff2') format('woff2'),
+         url('assets/fonts/playfairdisplay-bold-webfont.woff') format('woff'),
+         url('assets/fonts/playfairdisplay-bold-webfont.ttf') format('truetype'),
+         url('assets/fonts/playfairdisplay-bold-webfont.svg#playfair_displaybold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'playfair display';
+    src: url('assets/fonts/playfairdisplay-bolditalic-webfont.eot');
+    src: url('assets/fonts/playfairdisplay-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/playfairdisplay-bolditalic-webfont.woff2') format('woff2'),
+         url('assets/fonts/playfairdisplay-bolditalic-webfont.woff') format('woff'),
+         url('assets/fonts/playfairdisplay-bolditalic-webfont.ttf') format('truetype'),
+         url('assets/fonts/playfairdisplay-bolditalic-webfont.svg#playfair_displaybold_italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'playfair display';
+    src: url('assets/fonts/playfairdisplay-italic-webfont.eot');
+    src: url('assets/fonts/playfairdisplay-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/playfairdisplay-italic-webfont.woff2') format('woff2'),
+         url('assets/fonts/playfairdisplay-italic-webfont.woff') format('woff'),
+         url('assets/fonts/playfairdisplay-italic-webfont.ttf') format('truetype'),
+         url('assets/fonts/playfairdisplay-italic-webfont.svg#playfair_displayitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'playfair display';
+    src: url('assets/fonts/playfairdisplay-regular-webfont.eot');
+    src: url('assets/fonts/playfairdisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/playfairdisplay-regular-webfont.woff2') format('woff2'),
+         url('assets/fonts/playfairdisplay-regular-webfont.woff') format('woff'),
+         url('assets/fonts/playfairdisplay-regular-webfont.ttf') format('truetype'),
+         url('assets/fonts/playfairdisplay-regular-webfont.svg#playfair_displayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'raleway';
+    src: url('assets/fonts/raleway-light-webfont.eot');
+    src: url('assets/fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('assets/fonts/raleway-light-webfont.woff') format('woff'),
+         url('assets/fonts/raleway-light-webfont.ttf') format('truetype'),
+         url('assets/fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'raleway';
+    src: url('assets/fonts/raleway-lightitalic-webfont.eot');
+    src: url('assets/fonts/raleway-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/raleway-lightitalic-webfont.woff2') format('woff2'),
+         url('assets/fonts/raleway-lightitalic-webfont.woff') format('woff'),
+         url('assets/fonts/raleway-lightitalic-webfont.ttf') format('truetype'),
+         url('assets/fonts/raleway-lightitalic-webfont.svg#ralewaylight_italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'raleway';
+    src: url('assets/fonts/raleway-medium-webfont.eot');
+    src: url('assets/fonts/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/raleway-medium-webfont.woff2') format('woff2'),
+         url('assets/fonts/raleway-medium-webfont.woff') format('woff'),
+         url('assets/fonts/raleway-medium-webfont.ttf') format('truetype'),
+         url('assets/fonts/raleway-medium-webfont.svg#ralewaymedium') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'raleway';
+    src: url('assets/fonts/raleway-mediumitalic-webfont.eot');
+    src: url('assets/fonts/raleway-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/raleway-mediumitalic-webfont.woff2') format('woff2'),
+         url('assets/fonts/raleway-mediumitalic-webfont.woff') format('woff'),
+         url('assets/fonts/raleway-mediumitalic-webfont.ttf') format('truetype'),
+         url('assets/fonts/raleway-mediumitalic-webfont.svg#ralewaymedium_italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html {
+  font-size: 14px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "playfair display"
+}
+
+h2 {
+  font-family: "playfair display"
+}
+
+p {
+  font-family: "raleway"
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+li {
+  list-style-type: none;
+}
+
+li a {
+  color: #e2574c;
+  text-decoration: none;
+}
+/* Aloha logo and cart */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
+.logo-container {
+  flex: 1 0 auto;
+}
+
+.logo {
+  height: 60px;
+}
+
+.cart-container {
+  text-align: right;
+}
+
+.cart {
+  height: 60px;
+}
+
+/* Navigation Bar */
+.nav {
+  font-family: raleway;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #e2574c;
+  display: flex;
+  flex: 1 0 auto;
+  align-items: flex-end;
+  justify-content: space-around;
+  border-top: 1px solid #d7d7d7;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.nav a:hover {
+  color: #b64036;
+}
+
+/* Hero Banner */
+.banner p {
+  text-shadow: 0px 0px 10px #000;
+  text-align: center;
+  padding-top: 235px;
+  font-size: 23px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.banner h1 {
+  text-shadow: 0 0 10px #000;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  margin: 15px 0 0 35px;
+}
+
+.banner {
+  height: 500px;
+  background:
+    linear-gradient(
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.25)
+    ),
+    url(assets/images/banner-girl.png) no-repeat center 99px,
+    url(assets/images/flower-bkgd.jpg) repeat-x center center;
+    background-size: auto 100%;
+}
+
+/* About */
+.about h1 {
+  color: black;
+  font-family: 'playfair display';
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+.container .about {
+  max-width: 380px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.description {
+  text-align: center;
+  color: #969696;
+  line-height: 200%;
+  padding: 10px 0 60px 0;
+  }
+
+/* Categories */
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .categories a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2 2 4px #000;
+    text-transform: uppercase;
+    font-family: "raleway";
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mens-bg {
+    height: 200px;
+    background:
+      linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+      ),
+      url(assets/images/mens-category.jpg);
+      background-size: cover;
+    flex: 1 0 100%;
+    margin-bottom: 2%;
+
+  }
+
+  .trends-bg {
+    height: 200px;
+    background:
+      linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+      ),
+      url(assets/images/trends-category.jpg);
+    background-size: cover;
+    flex: 1 0 49%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+  }
+
+  .glasses-bg {
+    height: 200px;
+    background:
+      linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+      ),
+      url(assets/images/glasses-category.jpg);
+    background-size: cover;
+    flex: 1 0 49%;
+    margin-bottom: 2%;
+  }
+
+  .sale-bg {
+    height: 200px;
+    background:
+      linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+      ),
+      url(assets/images/sale-category.jpg);
+    background-size: cover;
+    flex: 1 0 49%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+  }
+
+  .bags-bg {
+    height: 200px;
+    background:
+      linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+      ),
+      url(assets/images/bags-category.jpg);
+    background-size: cover;
+    flex: 1 0 49%;
+    margin-bottom: 2%;
+  }
+
+  .womens-bg {
+    height: 200px;
+    background:
+      linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+      ),
+      url(assets/images/womens-category.jpg);
+    background-size: cover;
+    flex: 1 0 100%;
+  }
+
+/* Clothes */
+.clothes h1 {
+  font-size: 30px;
+}
+
+.clothes {
+  text-align: center;
+  padding: 60px 0;
+  overflow: hidden;
+}
+.clothes h2 {
+  color: #969696;
+}
+
+.product {
+  margin: 0 auto;
+  padding: 50px 0 30px 0;
+}
+.link {
+  font-family: "playfair display";
+  color: #e2574c;
+  padding: 30px 0;
+}
+
+/* Wave Banner */
+.wave h1 {
+  font-size: 30px;
+  padding: 25px 0;
+}
+
+.wave .container {
+  max-width: 380px;
+  text-align: center;
+}
+
+.wave {
+  height: 300px;
+  padding-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 200%;
+  color: white;
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15)
+  ),
+   url(assets/images/wave-bkgd.jpg) no-repeat center bottom;
+}
+
+/* Subscription */
+form {
+  background-color: white;
+  color: white;
+  margin-top: 20px;
+  border: 5px solid white;
+  display: inline-block;
+  border-radius: 33px;
+}
+
+.button:active {
+  position: relative;
+  top: 1px;
+}
+
+.input {
+  border: 1px solid white;
+  color: #969696;
+  border-radius: 33px;
+  width: 220px;
+  padding-left: 20px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.subscribe {
+  background-color: #e2574c;
+  border-radius: 33px;
+  border: 1px solid red;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+  padding: 7px 20px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 1px;
+}
+
+.subscribe:hover {
+  background-color: #b64036;
+}
+
+.subscribe:active {
+  position: relative;
+  top: 1px;
+}
+
+/* Footer */
+footer {
+  margin: 0 auto;
+  color: white;
+  background-color: #262626;
+  border: solid #262626;
+  border-top: 50px solid #262626;
+}
+
+.grey {
+  opacity: 0.3;
+}
+
+.contact {
+  padding: 30px 0;
+}
+
+.social {
+  display: none;
+}
+
+.info {
+  text-align:center;
+  margin: 0 auto;
+}
+
+.info h1 div {
+  width: 100%;
+}
+
+.info a {
+  color: white
+}
+
+.icon {
+  text-align: center;
+}
+
+.icon li {
+  padding: 40px 10px 40px 0;
+  display: inline-block;
+}
+
+/* Tablet */
+@media all and (min-width: 600px) {
+ html {
+   font-size: 16px;
+ }
+
+ .logo-container {
+   flex: 1 0 20%;
+   order: 1;
+ }
+
+ .cart-container {
+   flex: 1 0 20%;
+   text-align: right;
+   order: 3;
+ }
+
+ .nav {
+   display: flex;
+   border-top: none;
+   order: 2;
+ }
+
+ .nav li {
+   align-self: center;
+ }
+
+.mens-bg {
+  flex: 49%;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.trends-bg {
+  flex: 24%;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.glasses-bg {
+  flex-basis: 24%;
+  margin-bottom: 8px;
+}
+
+.sale-bg {
+  flex-basis: 24%;
+  margin-right: 8px;
+}
+
+.bags-bg {
+  flex-basis: 24%;
+  margin-right: 8px;
+}
+
+.womens-bg {
+  flex-basis: 49%;
+}
+
+.about {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+ /* Products */
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.clothes {
+ margin-left: 0 auto;
+ width: 100%;
+}
+
+/* Text in wave */
+.wave .container {
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Footer */
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.info {
+  margin: 0;
+  padding-left: 150px;
+}
+
+.icon {
+display: flex;
+flex-direction: column;
+padding-right: 200px;
+}
+
+.icon li {
+  padding: 10px 10px 10px 0;
+}
+.social {
+  display: inline;
+}
+
+/* Desktop */
+@media all and (min-width: 1240px) {
+  html {
+    font-size: 16px;
+  }
+
+.about {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+  /* Products */
+ .product {
+  float: left;
+  width: 25%;
+ }
+
+ .clothes {
+  margin-left: 0 auto;
+  width: 100%;
+ }
+
+.wave .container {
+  max-width: 600px;
+  }
+}
