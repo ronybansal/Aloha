@@ -15,16 +15,10 @@ $(document).ready(function(){
 });
 // Flickity Slider
 
-
-
-
 //Flickity Options
 $('.main-carousel').flickity({
  cellAlign: 'left',
  contain: true,
- freeScroll: true,
- wrapAround: true,
- autoPlay: true
 });
 
 // Email Alert //

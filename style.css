@@ -175,6 +175,7 @@ header {
   position: fixed;
   top: 0;
   background-color: white;
+  z-index: 5;
 }
 
 .logo-container {
